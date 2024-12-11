@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta name="keywords" content="Saude, noticia, esportes, cultura, politica">
+    <meta name="description" content="Página de noticias">
+    <meta name="author" content="Fernando">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Janela da Lua</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-moon" style="font-size: 3rem; color: rgb(233, 200, 15);"></i>
+                    <span class="indent-text">Janela da Lua</span>
+                </a>                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav politica-link" href="#politica">Política</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav cultura-link" href="#cultura">Cultura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav saude-link" href="#saude">Saúde</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav esportes-link" href="#esportes">Esportes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav" href="#"><i class="fas fa-cog"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="carrossel-noticias">
+            <h1 class="carrossel-noticias">NOTÍCIAS URGENTES</h1>
+            <div id="noticiasCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#noticiasCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#noticiasCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#noticiasCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="img/Companheiro.png" class="d-block w-100" alt="Imagem referente a falta de prefeito em Brasília">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h5>Lula é internado em SP: presidente está 'lúcido e sem sequelas' após cirurgia; o que mais se sabe</h5>
+                            <p>Após passar por uma cirurgia de emergência na noite de segunda-feira (9/12) em São Paulo, o presidente Luiz Inácio Lula da Silva (PT) não tem "nenhum comprometimento no cérbero", está "lúcido, falando e se alimentando".</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/lularacha.png" class="d-block w-100" alt="Imagem dos estados do país">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h5>O que é hemorragia intracraniana, que fez Lula ser operado às pressas</h5>
+                            <p>
+                                Segundo o boletim médico divulgado pelo Hospital Sírio-Libanês, onde o procedimento foi realizado, Lula se queixou de dores de cabeça na noite de segunda-feira (9/12).</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/mainNoticia.png" class="d-block w-100" alt="Celular com um app de apostas aberto">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h5>'O que brasileiros que testemunharam queda de Assad na Síria esperam do futuro: 'Piorar é impossível'</h5>
+                            <p>A curitibana Renata Issa e a recifense Marcela Jacques estão entre os cerca de 3,5 mil brasileiros que vivem na Síria atualmente, segundo estimativas do Ministério de Relações Exteriores.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#noticiasCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#noticiasCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+        
+            <h3 class="politica" id="politica">Notícias sobre Política</h3>
+            <div class="gallery politica-gallery">
+
+                <div class="noticia">
+                    <img src="img/prefeito.png" class="card-img-top" alt="Imagem referente a falta de prefeito em Brasília" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <div class="card-body">
+                        <p class="card-text">Por que Brasília não tem prefeito?</p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <img src="img/pais.png" class="card-img-top" alt="Imagem dos estados do país" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <div class="card-body">
+                        <p class="card-text">Eleições municipais: saiba quem são os 51 prefeitos eleitos no segundo turno</p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <img src="img/bets.png" class="card-img-top" alt="Celular com um app de apostas aberto" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <div class="card-body">
+                        <p class="card-text">'Não tem que ter propaganda' de casas de apostas, diz diretora de saúde mental do governo sobre as 'bets'</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <img src="img/x.png" alt="esquerdista Yamandú Orsi">
+                    <p>Quem é o esquerdista Yamandú Orsi, eleito presidente do Uruguai segundo projeções</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/y.png" alt="Dois politicos acenam">
+                    <p>Direita na América Latina considera esquerda inimigo existencial e não rival com direito de ganhar eleições’</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/z.png" alt="Uma mulher na Africa">
+                    <p>'O país com áreas inundadas onde pessoas morrem de sede</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/talkeipng.png" alt="Uma mulher na Africa">
+                    <p>'Bolsonaro pode mesmo ser Preso?</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/trumper.png" alt="Uma mulher na Africa">
+                    <p>Como o segundo mandato de Trump pode mudar o Mundo</p>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">Imagem de Brasília sem Prefeito</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/prefeito.png" class="img-fluid" alt="Imagem ampliada de Brasília sem Prefeito">
+                            <p>Quando Brasília foi inaugurada, em 1960, o modelo administrativo estabelecido se assemelhava um pouco mais a um Estado, englobando responsabilidades que, em outras regiões, seriam divididas entre prefeitos e governadores estaduais. Assim, o título de 'prefeito' foi substituído por 'governador'", explica o historiador Matheus Rosa, mestre pela UnB e pesquisador da história regional.
+
+                                E como capital federal, diz Rosa, a ideia era que Brasília pudesse funcionar de maneira independente e imparcial, sem o impacto de disputas regionais.
+                                
+                                Mas, ainda que haja semelhanças com administrações estaduais, o Distrito Federal tem características únicas que, há décadas, resultam na falta de eleições municipais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal2Label">Eleições Municipais no Brasil</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/pais.png" class="img-fluid" alt="Imagem ampliada dos estados do país">
+                            <p>No domingo (27), após a apuração do 2º turno das Eleições Municipais de 2024, o Tribunal Superior Eleitoral (TSE) divulgou a totalização dos votos nos 51 municípios que realizaram a segunda etapa do pleito para o cargo de prefeito. Os candidatos eleitos – alguns reeleitos – irão dirigir os municípios a partir do dia 1º de janeiro de 2025.  
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal3Label">Casas de Apostas e Saúde Mental</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/bets.png" class="img-fluid" alt="Imagem ampliada de celular com app de apostas">
+                            <p>Na TV, no celular, no computador ou nos estádios brasileiros, as operadoras de apostas online, popularmente conhecidas no Brasil como "bets", são quase onipresentes.
+
+                                Um levantamento feito pela consultoria Kantar Ibope e divulgado no início do mês pela revista Meio & Mensagem, aponta que, apenas em janeiro, as casas de apostas haviam injetado pelo menos R$ 2,4 bilhões no mercado publicitário do país em 2024.
+                                
+                                Mas para a diretora do Departamento de Saúde Mental do Ministério da Saúde, Sônia Barros, as empresas que atuam no ramo de apostas online não deveriam poder anunciar os seus serviços da forma como acontece agora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+        
+            <h3 class="saude" id="saude">Notícias sobre Saúde</h3>
+            <div class="gallery saude-gallery">
+                <div class="noticia">
+                    <img src="img/cerebro.png" alt="Imagem de um cérebro">
+                    <p>10 Alimentos para melhora cognitiva</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/sonequinha.png" alt="Mulher dormindo no vagão">
+                    <p>Problemas no sono? Tente mudar a forma como pensa nisso</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/a.png" alt="Homem no notebook">
+                    <p>Lamento crônico: o custo emocional e físico de reclamar de tudo o tempo todo</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/b.png" alt="Uma mesa com um pano">
+                    <p>Bicarbonato de sódio funciona para limpeza, segundo a ciência?</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/c.png" alt="Duas meninas">
+                    <p>Por que meninas de 6 anos na Índia estão com corpo de adolescente e menstruando?</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/d.png" alt="Uma mulher">
+                    <p>'Quero que meu útero seja removido, mas os médicos dizem que sou muito jovem'</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/aviao.png" alt="Uma mulher">
+                    <p>'Como Evitar ser um amigo Tóxico'</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/amigos.png" alt="Uma mulher">
+                    <p>'As pessoas precisam aprender Crianças choram, é normal'</p>
+                </div>
+            </div>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+        
+            <h3 class="cultura" id="cultura">Notícias sobre Cultura</h3>
+            <div class="gallery cultura-gallery">
+                <div class="noticia">
+                    <img src="img/lady.png" alt="Lady Gaga, diva pop">
+                    <p>A volta da Lady Gaga à música</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/family.png" alt="Família do filme mencionado">
+                    <p>O filme de 1924 que falava sobre os riscos de uma mulher na presidência</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/garoto.png" alt="Menino na frente do computador">
+                    <p>O garoto que vivia uma vida secreta no WoW</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/e.png" alt="Homem lendo">
+                    <p>O livro ‘obsceno’ que chegou a ser banido e depois virou best-seller mundial</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/f.png" alt="códigos de barra">
+                    <p>De 'laser suicida' a 'número da besta': os estranhos medos que códigos de barras causaram desde sua invenção</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/g.png" alt="Homem em uma blibioteca">
+                    <p>Os livros mais vendidos da historia</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/h.png" alt="Satelite de cima">
+                    <p>Como os satélites funcionam</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/chip.png" alt="Satelite de cima">
+                    <p>O chip quântico do Google que resolve em 5 minutos problema que hoje levaria 10 septilhões de anos</p>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+        
+            <h3 class="esportes" id="esportes">Notícias sobre Esportes</h3>
+            <div class="gallery esportes-gallery">
+                <div class="noticia">
+                    <img src="img/box.png" alt="Boxeador Maguila no auge da carreira">
+                    <p>Morre o boxeador Maguila: o que é a encefalopatia traumática crônica, que acometia o ex-atleta</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/personal.png" alt="Mulher treinando">
+                    <p>As personal trainers rejeitadas por estarem acima do peso: 'Padrão é ser feliz'</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/fotebola.png" alt="Três jogadores famosos">
+                    <p>Como Mbappe falhou no seu último jogo</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/h.png" alt="Senna">
+                    <p>'Senna unia o Brasil além da polarização. Não vejo ninguém assim hoje', diz diretor de série na Netflix</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/i.png" alt="Mulher correndo">
+                    <p>Todos os beneficios de correr</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/j.png" alt="Vinicius jr">
+                    <p>Bola de Ouro: por que Vini Jr. e Real Madrid boicotaram premiação?</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/k.png" alt="Bolo de time">
+                    <p>Clubes de futebol 'multam' confeiteiras em até R$ 2 mil por bolo com escudo do time</p>
+                </div>
+                <div class="noticia">
+                    <img src="img/jogadorInter.png" alt="Bolo de time">
+                    <p>Ex-Internacional tem sentença confirmada por abuso sexual na Espanha</p>
+                </div>
+                
+            </div>
+
+            <section >
+                <h3 style="color: #28a745">Tabela atualizada do Brasileirão</h3>
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <td>Posição</td>
+                            <td>Time</td>
+                            <td>Vitórias</td>
+                            <td>Empates</td>
+                            <td>Derrotas</td>
+                            <td>Pontos</td>
+                            <td>último Jogo</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bota-Fogo  <img src="img/botaFire.webp" alt="Brazão do Flamengo" style="width: 30px; margin-right: 10px;"></td>
+                            <td>23</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>79</td>
+
+                            <td><button class="btn btn-info btn-sm">Assistir</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Palmeiras  <img src="img/porco.webp" alt="Brazão do Flamengo" style="width: 30px; margin-right: 10px;"></td>
+                            <td>22</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>73</td>
+
+                            <td>8/12/24</td >
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Flamengo  <img src="img/mengudo.webp" alt="Brazão do Flamengo" style="width: 30px; margin-right: 10px;"></td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>8</td>
+                            <td>70</td>
+
+                            <td>8/12/24</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Fortaleza EC  <img src="img/fortaleza.webp" alt="Brazão do Flamengo" style="width: 30px; margin-right: 10px;"></td>
+                            <td>19</td>
+                            <td>11</td>
+                            <td>8</td>
+                            <td>68</td>
+
+                            <td>8/12/24</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Internacional  <img src="img/inter.webp" alt="Brazão do Flamengo" style="width: 30px; margin-right: 10px;"></td>
+                            <td>18</td> 
+                            <td>11</td>
+                            <td>9</td>
+                            <td>65</td>
+
+                            <td><button class="btn btn-info btn-sm">Assistir</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+        <section class="form-section">
+            <div class="form-container">
+                <img src="img/LuaReal.png" alt="Imagem ao lado do formulário" class="form-image">
+                <form>
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+        
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="birthdate">Data de Nascimento:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+        
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+        
+                        <label for="age">Idade:</label>
+                        <input type="number" id="age" name="age" required>
+        
+                        <label for="color">Cor Favorita:</label>
+                        <input type="color" id="color" name="color">
+        
+                        <label for="comments">Comentários:</label>
+                        <textarea id="comments" name="comments"></textarea>
+        
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        
+        
+        
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer-text">
+            Termos de Uso | Sobre a Janela da Lua | Política de Privacidade | Cookies | Contate a Janela | Other Languages | Do Not Share or Sell My Info
+        </div>
+        <hr><br>
+        <p>&copy; 2024 Janela da Lua. Todos os direitos reservados a minha pessoa.</p>
+    </footer>
+</body>
+</html>
